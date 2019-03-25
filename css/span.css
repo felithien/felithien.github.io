@@ -1,9 +1,9 @@
 #html-element {
     font-size: 24pt;
-    color: blue;
+    border-bottom-color: blue;
     font-weight: bold;
-    border-bottom-style: dashed;
-    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 .red {
