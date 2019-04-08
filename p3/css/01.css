@@ -1,0 +1,19 @@
+.col {
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.cell-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: gainsboro;
+    border-bottom: 1px;
+    text-align: center;
+}
+
+.price {
+    background-color: darkslategrey;
+}
