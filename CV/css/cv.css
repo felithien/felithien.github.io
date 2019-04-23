@@ -1,0 +1,175 @@
+    #img1 {
+        background-image: url(../img/01.jpg);
+        width: 200px;
+        height: 200px;
+        border-style: dotted;
+        border-width: 2px;
+        border-color: #FF5733;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sidebar-item {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .make-me-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 15px;
+    }
+    
+    #img2 {
+        background-image: url(../img/02.png);
+        width: 100px;
+        height: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ffffff;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img3 {
+        background-image: url(../img/03.png);
+        width: 100px;
+        height: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ffffff;
+        background-size: cover;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img4 {
+        background-image: url(../img/04.png);
+        width: 100px;
+        height: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ffffff;
+        background-size: cover;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img5 {
+        background-image: url(../img/05.png);
+        width: 100px;
+        height: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ffffff;
+        background-size: cover;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img6 {
+        background-image: url(../img/06.png);
+        width: 100px;
+        height: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ffffff;
+        background-size: cover;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h3 {
+        background-color: #DAF7A6;
+    }
+    
+    h6 {
+        text-align: center;
+    }
+    
+    #img7 {
+        background-image: url(../img/07.png);
+        width: 50px;
+        height: 50px;
+        border-width: 2px;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img8 {
+        background-image: url(../img/08.png);
+        width: 30px;
+        height: 30px;
+        border-width: 2px;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img9 {
+        background-image: url(../img/09.png);
+        width: 30px;
+        height: 30px;
+        border-width: 2px;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img10 {
+        background-image: url(../img/10.png);
+        width: 30px;
+        height: 30px;
+        border-width: 2px;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #img11 {
+        background-image: url(../img/11.png);
+        width: 30px;
+        height: 30px;
+        border-width: 2px;
+        background-size: cover;
+        border-radius: 50%;
+        border-spacing: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .col {
+        text-align: center;
+        background-color: gainsboro;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    
+    h4,
+    h5 {
+        text-align: center;
+    }
