@@ -1,0 +1,118 @@
+.navbar-expand-lg {
+    background-image: linear-gradient(to right, #c7e2f0, #becffa, #deb2ed, #ff90b7, #ff8066);
+    margin-bottom: 20px;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-style: oblique;
+}
+
+.h2 {
+    font-style: italic;
+    font-family: fantasy;
+}
+
+footer {
+    margin-top: 50px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #9E9E9E;
+    padding-top: 25px;
+    color: #908f8f;
+}
+
+body {
+    background-color: #4B4453;
+}
+
+.title {
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
+
+.name {
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    color: #212121;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.price {
+    color: #ff6709;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.image {
+    width: 160;
+    height: 160;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.item {
+    width: 280px;
+    height: 360px;
+    background: #ffffff;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    background-clip: border-box;
+    background-image: none;
+    background-origin: padding-box;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 0px;
+    padding-top: 34px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.item:before {
+    content: "";
+    width: 280px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 50px solid #ffffff;
+    border-left: 50px solid #4B4453;
+    border-right: 50px solid #4B4453;
+}
+
+.item:after {
+    content: "";
+    width: 280px;
+    height: 0;
+    position: absolute;
+    bottom: 0pt;
+    left: 0;
+    border-top: 50px solid#ffffff;
+    border-left: 50px solid #4B4453;
+    border-right: 50px solid #4B4453;
+}
+
+.item:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(-5px, -5px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+.pagination a {
+    transition: background-color .3s;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
