@@ -363,7 +363,7 @@ function showCard() {
     if ($('#c12').hasClass("card-inactive")) {
         $('#c12').hide()
     } else {
-        $('#c6').show()
+        $('#c12').show()
     }
 }
 
