@@ -1,0 +1,72 @@
+.jumbotron {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    color: black;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
+
+#start:hover {
+    cursor: grab;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: translate3d(-3px, -3px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#play:hover {
+    cursor: grab;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: translate3d(-3px, -3px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image {
+    border-radius: 10pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: rotateZ(90)
+}
+
+.image:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: translate3d(-3px, -3px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+.modal-title {
+    margin: auto;
+}
+
+.col-sm {
+    text-align: center;
+    border-color: black;
+}
+
+.col-sm:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: translate3d(-3px, -3px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: linear;
+}

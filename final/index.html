@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>期末DEMO</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 引入我們自己寫的 CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <span id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">LEARNINDO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <span id="home">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </span>
+                </li>
+                <li class="nav-item active">
+                    <span class="intro">
+                    <a class="nav-link" href="#" id="intro">INTRODUCTION</a>
+                </span>
+                </li>
+                <li class="nav-item ">
+                    <span class="study"></span>
+                    <a class="nav-link" href="#" id="study">TRY</a>
+                    </span>
+                </li>
+                <li class="nav-item ">
+                    <span class="favo"></span>
+                    <a class="nav-link" href="#" id="favo">MY FAVORITE</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        </span>
+
+        <span id="jumbotron">
+        <div class="jumbotron">
+            <h1 class="display-4">SELAMAT DATANG!<br>WELCOME!<br>歡迎!</h1>
+            <p class="lead"><em><strong>Indonesia as a mulitcultural country is famous of its culture, especially in art, music, and food. 
+                <br>Let's take a look at Indonesia traditional food!</strong></em>
+            </p>
+            <hr class="my-4">
+            <p>What are you waiting for? Let's get started!</p>
+            <div class="col">
+                <button id="start" type="button" class="btn btn-primary text-center">MULAI / START</button>
+            </div>
+        </div>
+    </span>
+        <div class="form-group row">
+            <div class="col">
+                <button id="play" type="button" class="btn btn-success text-center">CHALLENGE!</button>
+            </div>
+        </div>
+
+        <!-- foodimage -->
+        <div class="row" id="food">
+            <div class="col">
+                <img class="image" src="./img/1.jpg" width=200 height=160 id="fa">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/2.jpg" width=200 height=160 id="fb">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/3.jpg" width=200 height=160 id="fc">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/4.jpg" width=200 height=160 id="fd">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/5.jpg" width=200 height=160 id="fe">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/6.jpg" width=200 height=160 id="ff">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/7.jpg" width=200 height=160 id="fg">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/8.jpg" width=200 height=160 id="fm">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/9.jpg" width=200 height=160 id="fn">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/10.jpg" width=200 height=160 id="fr">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/11.jpg" width=200 height=160 id="fs">
+            </div>
+            <div class="col">
+                <img class="image" src="./img/12.png" width=200 height=160 id="ft">
+            </div>
+        </div>
+
+        <!-- foodinfo -->
+        <div class="modal fade bd-example-modal-sm" id="f1" tabindex="-1" role="dialog" aria-labelledby="f1Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">BAKSO</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/1.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a1">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) BAKSO
+                        <br>(EN) MEATBALL
+                        <br>(CH) 肉丸
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f2" tabindex="-1" role="dialog" aria-labelledby="f2Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">SOP BUNTUT</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/2.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a2">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) SOP BUNTUT
+                        <br>(EN) OXTAIL SOUP
+                        <br>(CH) 牛尾湯
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f3" tabindex="-1" role="dialog" aria-labelledby="f3Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">SATE</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/3.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a3">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) SATE
+                        <br>(EN) SATAY
+                        <br>(CH) 沙爹
+                    </div>
+                    <div class="modal-footer">Satay may consist of diced or sliced chicken, goat, mutton, beef, pork, fish, other meats, or tofu. Satay can be served in various sauces, however most often they are served in a combination of soy and peanut sauce.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f4" tabindex="-1" role="dialog" aria-labelledby="f4Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">RAWON</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/4.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a4">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) RAWON
+                        <br>(EN) RAWON
+                        <br>(CH) 拉甕
+                    </div>
+                    <div class="modal-footer">Rawon is a strong rich tasting traditional Indonesian beef black soup. It uses black nuts/keluak (Pangeum edule, fruits of kepayang tree) as the main seasoning which gives the strong nutty flavor and dark color to the soup.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f5" tabindex="-1" role="dialog" aria-labelledby="f5Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">PEMPEK</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/5.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a5">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) PEMPEK
+                        <br>(EN) PEMPEK
+                        <br>(CH) 「伯伯」魚餅
+                    </div>
+                    <div class="modal-footer">Pempek, mpek-mpek or empek-empek is a savoury Indonesian fishcake delicacy, made of fish and tapioca, from Palembang, South Sumatera, Indonesia. Pempek is served with rich sweet and sour sauce called kuah cuka or kuah cuko (lit. vinegar
+                        sauce)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f6" tabindex="-1" role="dialog" aria-labelledby="f6Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">SEMUR JENGKOL</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/6.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a6">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) SEMUR JENGKOL
+                        <br>(EN) STINKY BEAN STEW
+                        <br>(CH) -
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f7" tabindex="-1" role="dialog" aria-labelledby="f7Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">GADO-GADO</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/7.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a7">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) GADO-GADO
+                        <br>(EN) GADO-GADO
+                        <br>(CH) 加多加多
+                    </div>
+                    <div class="modal-footer">Gado-gado is an Indonesian salad of slightly boiled, blanched or steamed vegetables and hard-boiled eggs, boiled potato, fried tofu and tempeh, and lontong (rice wrapped in a banana leaf), served with a peanut sauce dressing.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f8" tabindex="-1" role="dialog" aria-labelledby="f8Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">KOLAK</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/8.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a8">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) KOLAK
+                        <br>(EN) KOLAK
+                        <br>(CH) 科拉克
+                    </div>
+                    <div class="modal-footer"> Kolak is Indonesian dessert made with palm sugar and coconut milk, with pandanus leaf for flavour. Usually, banana and sweet potatoes are added in it.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f9" tabindex="-1" role="dialog" aria-labelledby="f9Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">NASI GORENG</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/9.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a9">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) NASI GORENG
+                        <br>(EN) FRIED RICE
+                        <br>(CH) 炒飯
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f10" tabindex="-1" role="dialog" aria-labelledby="f10Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">RENDANG</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/10.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a10">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) RENDANG
+                        <br>(EN) RENDANG
+                        <br>(CH) 仁當
+                    </div>
+                    <div class="modal-footer">Rendang is an Indonesian spicy meat dish originating from the Minangkabau people of Indonesia. Along with the main meat ingredient, rendang uses coconut milk and a paste of mixed ground spices, including ginger, galangal, turmeric
+                        leaves, lemongrass, garlic, shallots, chillis and other spices.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f11" tabindex="-1" role="dialog" aria-labelledby="f11Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">SOTO</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                              </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/11.jpg" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a11">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) SOTO
+                        <br>(EN) SOTO
+                        <br>(CH) 素都
+                    </div>
+                    <div class="modal-footer">Soto is a traditional Indonesian soup mainly composed of broth, meat, and vegetables. It is usually accompanied by rice or compressed rice cakes (lontong, ketupat or burasa).
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-sm" id="f12" tabindex="-1" role="dialog" aria-labelledby="f12Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalCenterTitle">TEMPE</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image" src="./img/12.png" width=250 height=200>
+                        <div class="col">
+                            <button type="button" class="btn btn-info" id="a12">ADD TO MY FAVORITE</button>
+                        </div>
+                        <br>(ID) TEMPE
+                        <br>(EN) TEMPE (FERMENTED SOYA BEAN)
+                        <br>(CH) 天貝
+                    </div>
+                    <div class="modal-footer">Tempe (/ˈtɛmpeɪ/) is a traditional Indonesian soy product, originating from Indonesia.It is made by a natural culturing and controlled fermentation process that binds soybeans into a cake form.Here a special fungus is used, which has
+                        the Latin name Rhizopus oligosporus.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="game">
+            <script src="js/try.js"></script>
+            <div class="row">
+                <div class="col">
+                    <button id="back" type="button" class="btn btn-info">KEMBALI/BACK</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="image" src="./img/1.png" width=300 height=250 id="myfood">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>APAKAH ANDA TAU NAMA MAKANAN INI?</h3>
+                    <h4>DO YOU KNOW THE NAME OF THIS FOOD?</h4>
+                    <button id="yes" type="button" class="btn btn-success">YES, I KNOW !</button>
+                    <div class="modal fade bd-example-modal-sm" id="yup" tabindex="-1" role="dialog" aria-labelledby="yup" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center " id="exampleModalCenterTitle">SELAMAT!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img src='./img/yup.jpg' width=150 height=150>
+                                    <br> SELAMAT!
+                                    <br> ANDA SUNGGUH LUAR BIASA!
+                                    <br>
+                                    <br> CONGRATULATIONS!
+                                    <br> YOU'RE AWESOME!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ops" type="button" class="btn btn-danger">I DON'T KNOW :(</button>
+                    <div class="modal fade bd-example-modal-sm" id="no" tabindex="-1" role="dialog" aria-labelledby="yup" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center " id="exampleModalCenterTitle">QAQ</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img src='./img/nope.png' width=150 height=150>
+                                    <br> YOWES, RAPOPO...
+                                    <br> KAMU PASTI BISA!
+                                    <br>
+                                    <br> NO PROBLEM...
+                                    <br> YOU CAN DO IT!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- cards -->
+        <div class=card-group>
+            <span id="c1">
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="./img/1.jpg" width=250px height=200px alt="">
+                <div class="card-body">
+                    <h5 class="card-title">BAKSO</h5>
+                    <p class="card-text"> <br>(ID) BAKSO
+                        <br>(EN) MEATBALL
+                        <br>(CH) 肉丸</p>
+                    <a href="#" class="btn btn-danger" id="h1">HAPUS / REMOVE</a>
+                </div>
+            </div>
+            </span>
+
+            <span id="c2">
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="./img/2.jpg" width=250px height=200px alt="">
+                <div class="card-body">
+                    <h5 class="card-title">SOP BUNTUT</h5>
+                    <p class="card-text"><br>(ID) SOP BUNTUT
+                        <br>(EN) OXTAIL SOUP
+                        <br>(CH) 牛尾湯</p>
+                    <a href="#" class="btn btn-danger" id="h2">HAPUS / REMOVE</a>
+                </div>
+            </div>
+            </span>
+
+            <span id="c3">
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="./img/3.jpg" width=250px height=200px alt="">
+                <div class="card-body">
+                    <h5 class="card-title">SATE</h5>
+                    <p class="card-text">   <br>(ID) SATE
+                        <br>(EN) SATAY
+                        <br>(CH) 沙爹</p>
+                    <a href="#" class="btn btn-danger" id="h3">HAPUS / REMOVE</a>
+                </div>
+            </div>
+            </span>
+
+            <span id="c4">
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="./img/4.jpg" width=250px height=200px alt="">
+                <div class="card-body">
+                    <h5 class="card-title">RAWON</h5>
+                    <p class="card-text"> <br>(ID) RAWON
+                        <br>(EN) RAWON
+                        <br>(CH) 拉甕</p>
+                            <a href="#" class="btn btn-danger" id="h4">HAPUS / REMOVE</a>
+                        </div>
+                    </div>
+            </span>
+
+            <span id="c5">
+                        <div class="card" style="width: 250px;">
+                            <img class="card-img-top" src="./img/5.jpg" width=250px height=200px alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">PEMPEK</h5>
+                                <p class="card-text"> <br>(ID) PEMPEK
+                                    <br>(EN) PEMPEK
+                                    <br>(CH) 「伯伯」魚餅</p>
+                                <a href="#" class="btn btn-danger" id="h5">HAPUS / REMOVE</a>
+                            </div>
+                        </div>
+            </span>
+
+            <span id="c6">
+                            <div class="card" style="width: 250px;">
+                                <img class="card-img-top" src="./img/6.jpg" width=250px height=200px alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">SEMUR JENGKOL</h5>
+                                    <p class="card-text"> <br>(ID) SEMUR JENGKOL
+                                        <br>(EN) STINKY BEAN STEW
+                                        <br>(CH) -</p>
+                                    <a href="#" class="btn btn-danger" id="h6">HAPUS / REMOVE</a>
+                                </div>
+                            </div>
+                            </span>
+
+            <span id="c7">
+                                <div class="card" style="width: 250px;">
+                                    <img class="card-img-top" src="./img/7.jpg" width=250px height=200px alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GADO-GADO</h5>
+                                        <p class="card-text">  <br>(ID) GADO-GADO
+                                            <br>(EN) GADO-GADO
+                                            <br>(CH) 加多加多</p>
+                                        <a href="#" class="btn btn-danger" id="h7">HAPUS / REMOVE</a>
+                                    </div>
+                                </div>
+                                </span>
+
+            <span id="c8">
+                 <div class="card" style="width: 250px;">
+                                        <img class="card-img-top" src="./img/8.jpg" width=250px height=200px alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">KOLAK</h5>
+                                            <p class="card-text">  <br>(ID) KOLAK
+                                                <br>(EN) KOLAK
+                                                <br>(CH) 科拉克</p>
+                                            <a href="#" class="btn btn-danger" id="h8">HAPUS / REMOVE</a>
+                                        </div>
+                                    </div>
+            </span>
+
+            <span id="c9">
+                                        <div class="card" style="width: 250px;">
+                                            <img class="card-img-top" src="./img/9.jpg" width=250px height=200px alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">NASI GORENG</h5>
+                                                <p class="card-text"><br>(ID) NASI GORENG
+                                                    <br>(EN) FRIED RICE
+                                                    <br>(CH) 炒飯</p>
+                                                <a href="#" class="btn btn-danger" id="h9">HAPUS / REMOVE</a>
+                                            </div>
+                                        </div>
+            </span>
+
+            <span id="c10">
+                                            <div class="card" style="width: 250px;">
+                                                <img class="card-img-top" src="./img/10.jpg" width=250px height=200px alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">RENDANG</h5>
+                                                    <p class="card-text">   <br>(ID) RENDANG
+                                                        <br>(EN) RENDANG
+                                                        <br>(CH) 仁當</p>
+                                                    <a href="#" class="btn btn-danger" id="h10">HAPUS / REMOVE</a>
+                                                </div>
+                                            </div>
+            </span>
+
+            <span id="c11">
+                                                <div class="card" style="width: 250px;">
+                                                    <img class="card-img-top" src="./img/11.jpg" width=250px height=200px alt="">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"> SOTO</h5>
+                                                        <p class="card-text"> <br>(ID) SOTO
+                                                            <br>(EN) SOTO
+                                                            <br>(CH) 素都</p>
+                                                        <a href="#" class="btn btn-danger" id="h11">HAPUS / REMOVE</a>
+                                                    </div>
+                                                </div>
+           </span>
+
+            <span id="c12">
+                                                    <div class="card" style="width: 250px;">
+                                                        <img class="card-img-top" src="./img/12.png" width=250px height=200px alt="">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TEMPE</h5>
+                                                            <p class="card-text">  <br>(ID) TEMPE
+                                                                <br>(EN) TEMPE / FERMENTED SOYA BEAN
+                                                                <br>(CH) 天貝</p>
+                                                            <a href="#" class="btn btn-danger" id="h12">HAPUS / REMOVE</a>
+                                                        </div>
+                                                    </div>
+           </span>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="text-center">
+            2019 &copy; b07101028
+        </div>
+    </footer>
+
+
+    <!-- <div id="added" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">SUCCESSFULLY ADDED</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p id="message">PILIHAN ANDA TELAH BERHASIL DITAMBAHKAN :)
+                        <br>
+                        <br> YOUR CHOICE HAS BEEN ADDED SUCCESSFULLY :)
+                    </p>
+                </div> -->
+    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cek">TAKE A LOOK :D</button>
+                </div> -->
+
+
+
+    <!-- 引入 Bootstrap 的 JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- 引入我們自己寫的 JavaScript -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
