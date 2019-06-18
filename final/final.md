@@ -35,17 +35,16 @@ It is divided into three sections :
 
 
 
-## IMAGE SOURCES :
+## IMAGE and DATA SOURCES :
 
 - https://www.idntimes.com/food/dining-guide/birgitta-angie/10-makanan-khas-indonesia-yang-paling-disukai-negara-lain-enak-banget
 - https://makananoleholeh.com/makanan-khas-indonesia/#forward
 - Photos from google search
+- Wikipedia
 
 
 
-## SOMETHING SPECIAL FROM THIS PROJECT :
 
-Users don't need to be hestitate or desperate if they couldn't memorize the name of the cuisine. After they add their selected cuisine to "my favorite", the card will also available or shown  in the bottom part of "Introduction" and "Try" sections.
 
 
 
