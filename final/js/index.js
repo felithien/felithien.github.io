@@ -6,18 +6,7 @@ $(function() {
     $('.modal_fade').hide()
     $('#play').hide()
     $('#game').hide()
-    $('#c1').hide()
-    $('#c2').hide()
-    $('#c3').hide()
-    $('#c4').hide()
-    $('#c5').hide()
-    $('#c6').hide()
-    $('#c7').hide()
-    $('#c8').hide()
-    $('#c9').hide()
-    $('#c10').hide()
-    $('#c11').hide()
-    $('#c12').hide()
+    $('#cg').hide()
 })
 
 // buttons : show n hide
@@ -27,18 +16,7 @@ $('#home').on('click', function() {
     $('#food').hide()
     $('#play').hide()
     $('#game').hide()
-    $('#c1').hide()
-    $('#c2').hide()
-    $('#c3').hide()
-    $('#c4').hide()
-    $('#c5').hide()
-    $('#c6').hide()
-    $('#c7').hide()
-    $('#c8').hide()
-    $('#c9').hide()
-    $('#c10').hide()
-    $('#c11').hide()
-    $('#c12').hide()
+    $('#cg').hide()
 })
 
 $('#start').on('click', function() {
@@ -48,18 +26,7 @@ $('#start').on('click', function() {
     $('#play').show()
     $('#game').hide()
     $('#intro').addClass("active")
-    $('#c1').hide()
-    $('#c2').hide()
-    $('#c3').hide()
-    $('#c4').hide()
-    $('#c5').hide()
-    $('#c6').hide()
-    $('#c7').hide()
-    $('#c8').hide()
-    $('#c9').hide()
-    $('#c10').hide()
-    $('#c11').hide()
-    $('#c12').hide()
+    $('#cg').hide()
 })
 
 
@@ -74,10 +41,12 @@ $('#a1').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c1').show()
+    $('#c1').removeClass("card-inactive")
+    showCard();
 })
 $('#h1').on('click', function() {
-    $('#c1').hide()
+    $('#c1').addClass("card-inactive")
+    showCard();
 })
 
 $('#fb').on('click', function() {
@@ -90,10 +59,12 @@ $('#a2').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c2').show()
+    $('#c2').removeClass("card-inactive")
+    showCard();
 })
 $('#h2').on('click', function() {
-    $('#c2').hide()
+    $('#c2').addClass("card-inactive")
+    showCard();
 })
 
 $('#fc').on('click', function() {
@@ -106,10 +77,12 @@ $('#a3').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c3').show()
+    $('#c3').removeClass("card-inactive")
+    showCard();
 })
 $('#h3').on('click', function() {
-    $('#c3').hide()
+    $('#c3').addClass("card-inactive")
+    showCard();
 })
 
 $('#fd').on('click', function() {
@@ -122,10 +95,12 @@ $('#a4').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c4').show()
+    $('#c4').removeClass("card-inactive")
+    showCard();
 })
 $('#h4').on('click', function() {
-    $('#c4').hide()
+    $('#c4').addClass("card-inactive")
+    showCard();
 })
 
 $('#fe').on('click', function() {
@@ -138,10 +113,12 @@ $('#a5').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c5').show()
+    $('#c5').removeClass("card-inactive")
+    showCard();
 })
 $('#h5').on('click', function() {
-    $('#c5').hide()
+    $('#c5').addClass("card-inactive")
+    showCard();
 })
 
 $('#ff').on('click', function() {
@@ -154,10 +131,12 @@ $('#a6').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c6').show()
+    $('#c6').removeClass("card-inactive")
+    showCard()
 })
 $('#h6').on('click', function() {
-    $('#c6').hide()
+    $('#c6').addClass("card-inactive")
+    showCard();
 })
 
 $('#fg').on('click', function() {
@@ -170,10 +149,12 @@ $('#a7').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c7').show()
+    $('#c7').removeClass("card-inactive")
+    showCard()
 })
 $('#h7').on('click', function() {
-    $('#c7').hide()
+    $('#c7').addClass("card-inactive")
+    showCard();
 })
 
 
@@ -187,10 +168,12 @@ $('#a8').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c8').show()
+    $('#c8').removeClass("card-inactive")
+    showCard()
 })
 $('#h8').on('click', function() {
-    $('#c8').hide()
+    $('#c8').addClass("card-inactive")
+    showCard();
 })
 
 
@@ -204,10 +187,12 @@ $('#a9').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c9').show()
+    $('#c9').removeClass("card-inactive")
+    showCard()
 })
 $('#h9').on('click', function() {
-    $('#c9').hide()
+    $('#c9').addClass("card-inactive")
+    showCard();
 })
 
 $('#fr').on('click', function() {
@@ -220,10 +205,12 @@ $('#a10').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c10').show()
+    $('#c10').removeClass("card-inactive")
+    showCard()
 })
 $('#h10').on('click', function() {
-    $('#c10').hide()
+    $('#c10').addClass("card-inactive")
+    showCard();
 })
 
 
@@ -237,10 +224,12 @@ $('#a11').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c11').show()
+    $('#c11').removeClass("card-inactive")
+    showCard()
 })
 $('#h11').on('click', function() {
-    $('#c11').hide()
+    $('#c11').addClass("card-inactive")
+    showCard();
 })
 
 $('#ft').on('click', function() {
@@ -253,10 +242,12 @@ $('#a12').on('click', function() {
     $('#favo').addClass("active")
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
-    $('#c12').show()
+    $('#c12').removeClass("card-inactive")
+    showCard()
 })
 $('#h12').on('click', function() {
-    $('#c12').hide()
+    $('#c12').addClass("card-inactive")
+    showCard();
 })
 
 
@@ -265,6 +256,7 @@ $('#play').on('click', function() {
     $('#food').hide()
     $('#play').hide()
     $('#game').show()
+    $('#cg').hide()
     $('#intro').removeClass("active")
     $('#study').addClass("active")
     $('#favo').removeClass("active")
@@ -273,6 +265,7 @@ $('#study').on('click', function() {
     $('#food').hide()
     $('#play').hide()
     $('#game').show()
+    $('#cg').hide()
     $('#intro').removeClass("active")
     $('#study').addClass("active")
     $('#favo').removeClass("active")
@@ -283,6 +276,7 @@ $('#intro').on('click', function() {
     $('#food').show()
     $('#play').show()
     $('#game').hide()
+    $('#cg').hide()
     $('#intro').addClass("active")
     $('#study').removeClass("active")
     $('#favo').removeClass("active")
@@ -292,12 +286,17 @@ $('#back').on('click', function() {
     $('#food').show()
     $('#play').show()
     $('#game').hide()
+    $('#cg').hide()
     $('#intro').addClass("active")
     $('#study').removeClass("active")
     $('#favo').removeClass("active")
 })
 
 $('#favo').on('click', function() {
+    showCard();
+})
+
+function showCard() {
     $('#food').hide()
     $('#play').hide()
     $('#game').hide()
@@ -305,9 +304,68 @@ $('#favo').on('click', function() {
     $('#intro').removeClass("active")
     $('#study').removeClass("active")
     $('#back').show()
-})
-
-
+    $('#cg').show()
+    if ($('#c1').hasClass("card-inactive")) {
+        $('#c1').hide()
+    } else {
+        $('#c1').show()
+    }
+    if ($('#c2').hasClass("card-inactive")) {
+        $('#c2').hide()
+    } else {
+        $('#c2').show()
+    }
+    if ($('#c3').hasClass("card-inactive")) {
+        $('#c3').hide()
+    } else {
+        $('#c3').show()
+    }
+    if ($('#c4').hasClass("card-inactive")) {
+        $('#c4').hide()
+    } else {
+        $('#c4').show()
+    }
+    if ($('#c5').hasClass("card-inactive")) {
+        $('#c5').hide()
+    } else {
+        $('#c5').show()
+    }
+    if ($('#c6').hasClass("card-inactive")) {
+        $('#c6').hide()
+    } else {
+        $('#c6').show()
+    }
+    if ($('#c7').hasClass("card-inactive")) {
+        $('#c7').hide()
+    } else {
+        $('#c7').show()
+    }
+    if ($('#c8').hasClass("card-inactive")) {
+        $('#c8').hide()
+    } else {
+        $('#c8').show()
+    }
+    if ($('#c9').hasClass("card-inactive")) {
+        $('#c9').hide()
+    } else {
+        $('#c9').show()
+    }
+    if ($('#c10').hasClass("card-inactive")) {
+        $('#c10').hide()
+    } else {
+        $('#c10').show()
+    }
+    if ($('#c11').hasClass("card-inactive")) {
+        $('#c11').hide()
+    } else {
+        $('#c11').show()
+    }
+    if ($('#c12').hasClass("card-inactive")) {
+        $('#c12').hide()
+    } else {
+        $('#c6').show()
+    }
+}
 
 $('#yes').on('click', function() {
     $('#yup').modal({ backdrop: true })
